@@ -18,6 +18,7 @@ public class loverbook {
 		
 		System.out.println("두번째 수정 해보겠습니다.");
 		System.out.println("두번째 수정 해보겠습니다.");
+		System.out.println("두번째 수정 해보겠습니다.");
 
 	}
 
