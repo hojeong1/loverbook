@@ -13,7 +13,6 @@ public class loverbook {
 		System.out.println("1. 학생");
 		System.out.println("2. 사서");
 		System.out.println("권한을 선택하시오 : ");
-		System.out.println("아무거낳ㅎㅎㅎ");
 		int h_menu = s.nextInt();
 		
 		System.out.println("입력받은 메뉴는 "+ h_menu + "이다.");
