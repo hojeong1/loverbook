@@ -8,6 +8,7 @@ public class loverbook {
 	public static void main(String[] args){
 		Scanner s = new Scanner(System.in);
 		int l_menu=0;
+<<<<<<< HEAD
 		<<<<<<< HEAD
 		int s_menu=0;
 		String s_id = null, s_name, s_major;
@@ -22,6 +23,8 @@ public class loverbook {
 		System.out.println("1. 학생");
 		System.out.println("2. 사서");
 		System.out.println("권한을 선택하시오 : ");
+=======
+>>>>>>> 메뉴 수정했습니다.
 		int h_menu = s.nextInt();
 
 		if(h_menu == 1){
