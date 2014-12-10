@@ -69,6 +69,7 @@ public class loverbook {
 								}
 								else if(s_menu == 2){
 									//로그인 아이디에 해당하는 사람이 빌린 도서의 목록
+									System.out.println("빌린 도서 목록");
 								}
 							}
 						}
@@ -112,6 +113,7 @@ public class loverbook {
 							booknum++;
 							
 							System.out.println("도서 등록이 완료되었습니다.");
+							System.out.println("");
 							for(int i = 0; i<6;i++){
 								System.out.print(book[i]+" | ");
 							}
