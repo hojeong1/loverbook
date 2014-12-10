@@ -9,15 +9,16 @@ public class loverbook {
 		Scanner s = new Scanner(System.in);
 		int l_menu=0;
 <<<<<<< HEAD
+<<<<<<< HEAD
 		<<<<<<< HEAD
+>>>>>>> 학생메뉴로의 로그인 부분 구현
 		int s_menu=0;
 		String s_id = null, s_name, s_major;
 		int s_pw = 0, s_num;
 		String book[] = new String[6];
 		int booknum = 1;
 
-		=======
-
+<<<<<<< HEAD
 				>>>>>>> �븰�깮硫붾돱 援ы쁽�뻽�뒿�땲�떎.
 				System.out.println("<홈 메뉴>");
 		System.out.println("1. 학생");
@@ -62,10 +63,53 @@ public class loverbook {
 					System.out.println("비밀번호 : ");
 					int pw = s.nextInt();
 
+=======
+		System.out.println("<Ȩ �޴�>");
+		System.out.println("1. �л�");
+		System.out.println("2. �缭");
+		System.out.println("������ �����Ͻÿ� : ");
+		int h_menu = s.nextInt();
+
+		if(h_menu == 1){
+			while(true){
+				System.out.println("1.ȸ������    2.�α���");
+				System.out.println("�׸��� �����ϼ��� : ");
+				int login = s.nextInt();
+
+				if(login == 1){
+					System.out.println("ID�� �Է��ϼ��� : ");
+					s_id = s.next();
+					System.out.println("��й�ȣ�� �Է��ϼ��� : ");
+					s_pw = s.nextInt();
+					System.out.println("�̸��� �Է��ϼ��� : ");
+					s_name = s.next();
+					System.out.println("������ �Է��ϼ��� : ");
+					s_major = s.next();
+					System.out.println("�й��� �Է��ϼ��� : ");
+					s_num = s.nextInt();
+					System.out.println("---�����մϴ�. ������ �Ϸ�Ǿ����ϴ�.---");
+					System.out.println("ID : "+s_id);
+					System.out.println("�̸� : "+s_name);
+					System.out.println("���� : "+s_major);
+					System.out.println("�й� : "+s_num);
+					System.out.println("--------------------------------");
+					System.out.println();
+				}
+				
+
+				else if(login == 2){
+					System.out.println("-----<�α���>-----");
+					System.out.println("ID : ");
+					String id = s.next();
+					System.out.println("��й�ȣ : ");
+					int pw = s.nextInt();
+					
+>>>>>>> 학생메뉴로의 로그인 부분 구현
 					if(id.equals(s_id)){
 						if(pw==s_pw){
 							while (l_menu != 3)
 							{
+<<<<<<< HEAD
 								System.out.println("<학생 메뉴>");
 								System.out.println("1. 도서 검색 및 대출");
 								System.out.println("2. 내가 빌린 도서 목록 확인");
@@ -96,11 +140,43 @@ public class loverbook {
 			<<<<<<< HEAD
 			while(true){
 				System.out.println("사서 비밀번호를 입력하세요 : ");
+=======
+								System.out.println("<�л� �޴�>");
+								System.out.println("1. ���� �˻� �� ����");
+								System.out.println("2. ���� ���� ���� ��� Ȯ��");
+								System.out.println("�׸��� �����Ͻÿ� : ");
+								s_menu = s.nextInt();
+								
+								if(s_menu == 1){
+									System.out.println("�˻� : ");
+								}
+								else if(s_menu == 2){
+									//�α��� ���̵� �ش��ϴ� ����� ���� ������ ���
+								}
+							}
+						}
+						
+						else
+							System.out.println("��й�ȣ�� ��ġ���� �ʽ��ϴ�.");
+					}
+					else
+						System.out.println("ID�� ��ġ���� �ʽ��ϴ�.");
+					
+				}
+			}
+
+		}
+
+		else{//librarian
+			while(true){
+				System.out.println("�缭 ��й�ȣ�� �Է��ϼ��� : ");
+>>>>>>> 학생메뉴로의 로그인 부분 구현
 				int l_secret = s.nextInt();
 
 				if(l_secret == 0000000){
 					while (l_menu != 4)
 					{
+<<<<<<< HEAD
 						System.out.println("<사서 메뉴>");
 						System.out.println("1. 도서 등록");
 						System.out.println("2. 도서 정보 수정");
@@ -114,11 +190,27 @@ public class loverbook {
 							System.out.println("저자 : ");
 							book[1] = s.next();
 							System.out.println("출판사 : ");
+=======
+						System.out.println("<�缭 �޴�>");
+						System.out.println("1. ���� ���");
+						System.out.println("2. ���� ���� ����");
+						System.out.println("3. ���� ����");
+						System.out.println("�׸��� �����Ͻÿ� : ");
+						l_menu = s.nextInt();
+						
+						if(l_menu == 1){
+							System.out.println("���� ���� : ");
+							book[0] = s.next();
+							System.out.println("���� : ");
+							book[1] = s.next();
+							System.out.println("���ǻ� : ");
+>>>>>>> 학생메뉴로의 로그인 부분 구현
 							book[2] = s.next();
 							book[3] = String.valueOf(booknum);
 							book[4] = "O";
 							book[5] = "0000000";
 							booknum++;
+<<<<<<< HEAD
 
 							System.out.println("도서 등록이 완료되었습니다.");
 							for(int i = 0; i<6;i++){
@@ -128,17 +220,32 @@ public class loverbook {
 						}
 						else if(l_menu == 2){
 							System.out.println("수정할 도서의 번호를 입력하세요 : ");
+=======
+							
+							System.out.println("���� ����� �Ϸ�Ǿ����ϴ�.");
+							for(int i = 0; i<6;i++){
+								System.out.print(book[i]+" | ");
+								System.out.println();
+							}
+>>>>>>> 학생메뉴로의 로그인 부분 구현
 						}
 					}
 				}
 
 				else{
+<<<<<<< HEAD
 					System.out.println("비밀번호가 틀렸습니다.다시 입력해 주세요.");
 				}
 			}
 
 			=======
 			>>>>>>> �븰�깮硫붾돱 援ы쁽�뻽�뒿�땲�떎.
+=======
+					System.out.println("��й�ȣ�� Ʋ�Ƚ��ϴ�.�ٽ� �Է��� �ּ���.");
+				}
+			}
+
+>>>>>>> 학생메뉴로의 로그인 부분 구현
 		}
 
 	}
