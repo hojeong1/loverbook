@@ -8,159 +8,76 @@ public class loverbook {
 	public static void main(String[] args){
 		Scanner s = new Scanner(System.in);
 		int l_menu=0;
-<<<<<<< HEAD
-<<<<<<< HEAD
-		<<<<<<< HEAD
->>>>>>> í•™ìƒë©”ë‰´ë¡œì˜ ë¡œê·¸ì¸ ë¶€ë¶„ êµ¬í˜„
 		int s_menu=0;
 		String s_id = null, s_name, s_major;
 		int s_pw = 0, s_num;
 		String book[] = new String[6];
 		int booknum = 1;
 
-<<<<<<< HEAD
-				>>>>>>> ï¿½ë¸°ï¿½ê¹®ï§ë¶¾ë± æ´Ñ‹ì½ï¿½ë»½ï¿½ë’¿ï¿½ë•²ï¿½ë–.
-				System.out.println("<í™ˆ ë©”ë‰´>");
-		System.out.println("1. í•™ìƒ");
-		System.out.println("2. ì‚¬ì„œ");
-		System.out.println("ê¶Œí•œì„ ì„ íƒí•˜ì‹œì˜¤ : ");
-=======
->>>>>>> ë©”ë‰´ ìˆ˜ì •í–ˆìŠµë‹ˆë‹¤.
-		int h_menu = s.nextInt();
-
-		if(h_menu == 1){
-			<<<<<<< HEAD
-			while(true){
-				System.out.println("1.íšŒì›ê°€ì…    2.ë¡œê·¸ì¸");
-				System.out.println("í•­ëª©ì„ ì„ íƒí•˜ì„¸ìš” : ");
-				int login = s.nextInt();
-
-				if(login == 1){
-					System.out.println("IDë¥¼ ì…ë ¥í•˜ì„¸ìš” : ");
-					s_id = s.next();
-					System.out.println("ë¹„ë°€ë²ˆí˜¸ë¥¼ ì…ë ¥í•˜ì„¸ìš” : ");
-					s_pw = s.nextInt();
-					System.out.println("ì´ë¦„ë¥¼ ì…ë ¥í•˜ì„¸ìš” : ");
-					s_name = s.next();
-					System.out.println("ì „ê³µë¥¼ ì…ë ¥í•˜ì„¸ìš” : ");
-					s_major = s.next();
-					System.out.println("í•™ë²ˆë¥¼ ì…ë ¥í•˜ì„¸ìš” : ");
-					s_num = s.nextInt();
-					System.out.println("---ì¶•í•˜í•©ë‹ˆë‹¤. ê°€ì…ì´ ì™„ë£Œë˜ì—ˆìŠµë‹ˆë‹¤.---");
-					System.out.println("ID : "+s_id);
-					System.out.println("ì´ë¦„ : "+s_name);
-					System.out.println("ì „ê³µ : "+s_major);
-					System.out.println("í•™ë²ˆ : "+s_num);
-					System.out.println("--------------------------------");
-					System.out.println();
-				}
-
-
-				else if(login == 2){
-					System.out.println("-----<ë¡œê·¸ì¸>-----");
-					System.out.println("ID : ");
-					String id = s.next();
-					System.out.println("ë¹„ë°€ë²ˆí˜¸ : ");
-					int pw = s.nextInt();
-
-=======
-		System.out.println("<È¨ ï¿½Ş´ï¿½>");
-		System.out.println("1. ï¿½Ğ»ï¿½");
-		System.out.println("2. ï¿½ç¼­");
-		System.out.println("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Ï½Ã¿ï¿½ : ");
+		System.out.println("<È¨ ¸Ş´º>");
+		System.out.println("1. ÇĞ»ı");
+		System.out.println("2. »ç¼­");
+		System.out.println("±ÇÇÑÀ» ¼±ÅÃÇÏ½Ã¿À : ");
 		int h_menu = s.nextInt();
 
 		if(h_menu == 1){
 			while(true){
-				System.out.println("1.È¸ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½    2.ï¿½Î±ï¿½ï¿½ï¿½");
-				System.out.println("ï¿½×¸ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Ï¼ï¿½ï¿½ï¿½ : ");
+				System.out.println("1.È¸¿ø°¡ÀÔ    2.·Î±×ÀÎ");
+				System.out.println("Ç×¸ñÀ» ¼±ÅÃÇÏ¼¼¿ä : ");
 				int login = s.nextInt();
 
 				if(login == 1){
-					System.out.println("IDï¿½ï¿½ ï¿½Ô·ï¿½ï¿½Ï¼ï¿½ï¿½ï¿½ : ");
+					System.out.println("ID¸¦ ÀÔ·ÂÇÏ¼¼¿ä : ");
 					s_id = s.next();
-					System.out.println("ï¿½ï¿½Ğ¹ï¿½È£ï¿½ï¿½ ï¿½Ô·ï¿½ï¿½Ï¼ï¿½ï¿½ï¿½ : ");
+					System.out.println("ºñ¹Ğ¹øÈ£¸¦ ÀÔ·ÂÇÏ¼¼¿ä : ");
 					s_pw = s.nextInt();
-					System.out.println("ï¿½Ì¸ï¿½ï¿½ï¿½ ï¿½Ô·ï¿½ï¿½Ï¼ï¿½ï¿½ï¿½ : ");
+					System.out.println("ÀÌ¸§¸¦ ÀÔ·ÂÇÏ¼¼¿ä : ");
 					s_name = s.next();
-					System.out.println("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Ô·ï¿½ï¿½Ï¼ï¿½ï¿½ï¿½ : ");
+					System.out.println("Àü°ø¸¦ ÀÔ·ÂÇÏ¼¼¿ä : ");
 					s_major = s.next();
-					System.out.println("ï¿½Ğ¹ï¿½ï¿½ï¿½ ï¿½Ô·ï¿½ï¿½Ï¼ï¿½ï¿½ï¿½ : ");
+					System.out.println("ÇĞ¹ø¸¦ ÀÔ·ÂÇÏ¼¼¿ä : ");
 					s_num = s.nextInt();
-					System.out.println("---ï¿½ï¿½ï¿½ï¿½ï¿½Õ´Ï´ï¿½. ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Ï·ï¿½Ç¾ï¿½ï¿½ï¿½ï¿½Ï´ï¿½.---");
+					System.out.println("---ÃàÇÏÇÕ´Ï´Ù. °¡ÀÔÀÌ ¿Ï·áµÇ¾ú½À´Ï´Ù.---");
 					System.out.println("ID : "+s_id);
-					System.out.println("ï¿½Ì¸ï¿½ : "+s_name);
-					System.out.println("ï¿½ï¿½ï¿½ï¿½ : "+s_major);
-					System.out.println("ï¿½Ğ¹ï¿½ : "+s_num);
+					System.out.println("ÀÌ¸§ : "+s_name);
+					System.out.println("Àü°ø : "+s_major);
+					System.out.println("ÇĞ¹ø : "+s_num);
 					System.out.println("--------------------------------");
 					System.out.println();
 				}
 				
 
 				else if(login == 2){
-					System.out.println("-----<ï¿½Î±ï¿½ï¿½ï¿½>-----");
+					System.out.println("-----<·Î±×ÀÎ>-----");
 					System.out.println("ID : ");
 					String id = s.next();
-					System.out.println("ï¿½ï¿½Ğ¹ï¿½È£ : ");
+					System.out.println("ºñ¹Ğ¹øÈ£ : ");
 					int pw = s.nextInt();
 					
->>>>>>> í•™ìƒë©”ë‰´ë¡œì˜ ë¡œê·¸ì¸ ë¶€ë¶„ êµ¬í˜„
 					if(id.equals(s_id)){
 						if(pw==s_pw){
 							while (l_menu != 3)
 							{
-<<<<<<< HEAD
-								System.out.println("<í•™ìƒ ë©”ë‰´>");
-								System.out.println("1. ë„ì„œ ê²€ìƒ‰ ë° ëŒ€ì¶œ");
-								System.out.println("2. ë‚´ê°€ ë¹Œë¦° ë„ì„œ ëª©ë¡ í™•ì¸");
-								System.out.println("í•­ëª©ì„ ì„ íƒí•˜ì‹œì˜¤ : ");
-								s_menu = s.nextInt();
-
-								if(s_menu == 1){
-									System.out.println("ê²€ìƒ‰ : ");
-								}
-								else if(s_menu == 2){
-									//ë¡œê·¸ì¸ ì•„ì´ë””ì— í•´ë‹¹í•˜ëŠ” ì‚¬ëŒì´ ë¹Œë¦° ë„ì„œì˜ ëª©ë¡
-								}
-							}
-						}
-						else
-							System.out.println("ë¹„ë°€ë²ˆí˜¸ê°€ ì¼ì¹˜í•˜ì§€ ì•ŠìŠµë‹ˆë‹¤.");
-					}
-					else
-						System.out.println("IDê°€ ì¼ì¹˜í•˜ì§€ ì•ŠìŠµë‹ˆë‹¤.");
-				}
-			}
-
-			=======
-			>>>>>>> ï¿½ë¸°ï¿½ê¹®ï§ë¶¾ë± æ´Ñ‹ì½ï¿½ë»½ï¿½ë’¿ï¿½ë•²ï¿½ë–.
-		}
-
-		else{//librarian
-			<<<<<<< HEAD
-			while(true){
-				System.out.println("ì‚¬ì„œ ë¹„ë°€ë²ˆí˜¸ë¥¼ ì…ë ¥í•˜ì„¸ìš” : ");
-=======
-								System.out.println("<ï¿½Ğ»ï¿½ ï¿½Ş´ï¿½>");
-								System.out.println("1. ï¿½ï¿½ï¿½ï¿½ ï¿½Ë»ï¿½ ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½");
-								System.out.println("2. ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ È®ï¿½ï¿½");
-								System.out.println("ï¿½×¸ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Ï½Ã¿ï¿½ : ");
+								System.out.println("<ÇĞ»ı ¸Ş´º>");
+								System.out.println("1. µµ¼­ °Ë»ö ¹× ´ëÃâ");
+								System.out.println("2. ³»°¡ ºô¸° µµ¼­ ¸ñ·Ï È®ÀÎ");
+								System.out.println("Ç×¸ñÀ» ¼±ÅÃÇÏ½Ã¿À : ");
 								s_menu = s.nextInt();
 								
 								if(s_menu == 1){
-									System.out.println("ï¿½Ë»ï¿½ : ");
+									System.out.println("°Ë»ö : ");
 								}
 								else if(s_menu == 2){
-									//ï¿½Î±ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½Ìµï¿½ ï¿½Ø´ï¿½ï¿½Ï´ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½
+									//·Î±×ÀÎ ¾ÆÀÌµğ¿¡ ÇØ´çÇÏ´Â »ç¶÷ÀÌ ºô¸° µµ¼­ÀÇ ¸ñ·Ï
 								}
 							}
 						}
 						
 						else
-							System.out.println("ï¿½ï¿½Ğ¹ï¿½È£ï¿½ï¿½ ï¿½ï¿½Ä¡ï¿½ï¿½ï¿½ï¿½ ï¿½Ê½ï¿½ï¿½Ï´ï¿½.");
+							System.out.println("ºñ¹Ğ¹øÈ£°¡ ÀÏÄ¡ÇÏÁö ¾Ê½À´Ï´Ù.");
 					}
 					else
-						System.out.println("IDï¿½ï¿½ ï¿½ï¿½Ä¡ï¿½ï¿½ï¿½ï¿½ ï¿½Ê½ï¿½ï¿½Ï´ï¿½.");
+						System.out.println("ID°¡ ÀÏÄ¡ÇÏÁö ¾Ê½À´Ï´Ù.");
 					
 				}
 			}
@@ -169,85 +86,50 @@ public class loverbook {
 
 		else{//librarian
 			while(true){
-				System.out.println("ï¿½ç¼­ ï¿½ï¿½Ğ¹ï¿½È£ï¿½ï¿½ ï¿½Ô·ï¿½ï¿½Ï¼ï¿½ï¿½ï¿½ : ");
->>>>>>> í•™ìƒë©”ë‰´ë¡œì˜ ë¡œê·¸ì¸ ë¶€ë¶„ êµ¬í˜„
+				System.out.println("»ç¼­ ºñ¹Ğ¹øÈ£¸¦ ÀÔ·ÂÇÏ¼¼¿ä : ");
 				int l_secret = s.nextInt();
 
 				if(l_secret == 0000000){
 					while (l_menu != 4)
 					{
-<<<<<<< HEAD
-						System.out.println("<ì‚¬ì„œ ë©”ë‰´>");
-						System.out.println("1. ë„ì„œ ë“±ë¡");
-						System.out.println("2. ë„ì„œ ì •ë³´ ìˆ˜ì •");
-						System.out.println("3. ë„ì„œ ì‚­ì œ");
-						System.out.println("í•­ëª©ì„ ì„ íƒí•˜ì‹œì˜¤ : ");
-						l_menu = s.nextInt();
-
-						if(l_menu == 1){
-							System.out.println("ë„ì„œ ì œëª© : ");
-							book[0] = s.next();
-							System.out.println("ì €ì : ");
-							book[1] = s.next();
-							System.out.println("ì¶œíŒì‚¬ : ");
-=======
-						System.out.println("<ï¿½ç¼­ ï¿½Ş´ï¿½>");
-						System.out.println("1. ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½");
-						System.out.println("2. ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½");
-						System.out.println("3. ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½");
-						System.out.println("ï¿½×¸ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Ï½Ã¿ï¿½ : ");
+						System.out.println("<»ç¼­ ¸Ş´º>");
+						System.out.println("1. µµ¼­ µî·Ï");
+						System.out.println("2. µµ¼­ Á¤º¸ ¼öÁ¤");
+						System.out.println("3. µµ¼­ »èÁ¦");
+						System.out.println("Ç×¸ñÀ» ¼±ÅÃÇÏ½Ã¿À : ");
 						l_menu = s.nextInt();
 						
 						if(l_menu == 1){
-							System.out.println("ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ : ");
+							System.out.println("µµ¼­ Á¦¸ñ : ");
 							book[0] = s.next();
-							System.out.println("ï¿½ï¿½ï¿½ï¿½ : ");
+							System.out.println("ÀúÀÚ : ");
 							book[1] = s.next();
-							System.out.println("ï¿½ï¿½ï¿½Ç»ï¿½ : ");
->>>>>>> í•™ìƒë©”ë‰´ë¡œì˜ ë¡œê·¸ì¸ ë¶€ë¶„ êµ¬í˜„
+							System.out.println("ÃâÆÇ»ç : ");
 							book[2] = s.next();
 							book[3] = String.valueOf(booknum);
 							book[4] = "O";
 							book[5] = "0000000";
 							booknum++;
-<<<<<<< HEAD
-
-							System.out.println("ë„ì„œ ë“±ë¡ì´ ì™„ë£Œë˜ì—ˆìŠµë‹ˆë‹¤.");
+							
+							System.out.println("µµ¼­ µî·ÏÀÌ ¿Ï·áµÇ¾ú½À´Ï´Ù.");
 							for(int i = 0; i<6;i++){
 								System.out.print(book[i]+" | ");
 							}
 							System.out.println();
 						}
+						
 						else if(l_menu == 2){
-							System.out.println("ìˆ˜ì •í•  ë„ì„œì˜ ë²ˆí˜¸ë¥¼ ì…ë ¥í•˜ì„¸ìš” : ");
-=======
-							
-							System.out.println("ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Ï·ï¿½Ç¾ï¿½ï¿½ï¿½ï¿½Ï´ï¿½.");
-							for(int i = 0; i<6;i++){
-								System.out.print(book[i]+" | ");
-								System.out.println();
-							}
->>>>>>> í•™ìƒë©”ë‰´ë¡œì˜ ë¡œê·¸ì¸ ë¶€ë¶„ êµ¬í˜„
+							System.out.println("¼öÁ¤ÇÒ µµ¼­ÀÇ ¹øÈ£¸¦ ÀÔ·ÂÇÏ¼¼¿ä: ");
 						}
 					}
 				}
 
 				else{
-<<<<<<< HEAD
-					System.out.println("ë¹„ë°€ë²ˆí˜¸ê°€ í‹€ë ¸ìŠµë‹ˆë‹¤.ë‹¤ì‹œ ì…ë ¥í•´ ì£¼ì„¸ìš”.");
+					System.out.println("ºñ¹Ğ¹øÈ£°¡ Æ²·È½À´Ï´Ù.´Ù½Ã ÀÔ·ÂÇØ ÁÖ¼¼¿ä.");
 				}
 			}
 
-			=======
-			>>>>>>> ï¿½ë¸°ï¿½ê¹®ï§ë¶¾ë± æ´Ñ‹ì½ï¿½ë»½ï¿½ë’¿ï¿½ë•²ï¿½ë–.
-=======
-					System.out.println("ï¿½ï¿½Ğ¹ï¿½È£ï¿½ï¿½ Æ²ï¿½È½ï¿½ï¿½Ï´ï¿½.ï¿½Ù½ï¿½ ï¿½Ô·ï¿½ï¿½ï¿½ ï¿½Ö¼ï¿½ï¿½ï¿½.");
-				}
-			}
-
->>>>>>> í•™ìƒë©”ë‰´ë¡œì˜ ë¡œê·¸ì¸ ë¶€ë¶„ êµ¬í˜„
 		}
 
 	}
-
 }
