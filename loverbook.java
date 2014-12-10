@@ -11,6 +11,8 @@ public class loverbook {
 		int s_menu=0;
 		String s_id, s_name, s_major;
 		int s_pw, s_num;
+		String book[] = new String[6];
+		int booknum = 1;
 
 		System.out.println("<홈 메뉴>");
 		System.out.println("1. 학생");
@@ -43,8 +45,13 @@ public class loverbook {
 					System.out.println("--------------------------------");
 					System.out.println();
 				}
+				
 
-				else{
+				else if(login == 2){
+					System.out.println("-----<로그인>-----");
+					System.out.println("ID : ");
+					System.out.println("비밀번호 : ");
+					
 					while (l_menu != 3)
 					{
 						System.out.println("<학생 메뉴>");
@@ -52,6 +59,13 @@ public class loverbook {
 						System.out.println("2. 내가 빌린 도서 목록 확인");
 						System.out.println("항목을 선택하시오 : ");
 						s_menu = s.nextInt();
+						
+						if(s_menu == 1){
+							System.out.println("검색 : ");
+						}
+						else if(s_menu == 2){
+							//로그인 아이디에 해당하는 사람이 빌린 도서의 목록
+						}
 					}
 				}
 			}
@@ -72,6 +86,25 @@ public class loverbook {
 						System.out.println("3. 도서 삭제");
 						System.out.println("항목을 선택하시오 : ");
 						l_menu = s.nextInt();
+						
+						if(l_menu == 1){
+							System.out.println("도서 제목 : ");
+							book[0] = s.next();
+							System.out.println("저자 : ");
+							book[1] = s.next();
+							System.out.println("출판사 : ");
+							book[2] = s.next();
+							book[3] = String.valueOf(booknum);
+							book[4] = "O";
+							book[5] = "0000000";
+							booknum++;
+							
+							System.out.println("도서 등록이 완료되었습니다.");
+							for(int i = 0; i<6;i++){
+								System.out.print(book[i]+" | ");
+								System.out.println();
+							}
+						}
 					}
 				}
 
