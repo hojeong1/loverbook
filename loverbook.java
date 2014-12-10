@@ -45,7 +45,7 @@ public class loverbook {
 					System.out.println("--------------------------------");
 					System.out.println();
 				}
-				
+
 
 				else if(login == 2){
 					System.out.println("-----<로그인>-----");
@@ -53,7 +53,7 @@ public class loverbook {
 					String id = s.next();
 					System.out.println("비밀번호 : ");
 					int pw = s.nextInt();
-					
+
 					if(id.equals(s_id)){
 						if(pw==s_pw){
 							while (l_menu != 3)
@@ -63,7 +63,7 @@ public class loverbook {
 								System.out.println("2. 내가 빌린 도서 목록 확인");
 								System.out.println("항목을 선택하시오 : ");
 								s_menu = s.nextInt();
-								
+
 								if(s_menu == 1){
 									System.out.println("검색 : ");
 								}
@@ -72,13 +72,13 @@ public class loverbook {
 								}
 							}
 						}
-						
+
 						else
 							System.out.println("비밀번호가 일치하지 않습니다.");
 					}
 					else
 						System.out.println("ID가 일치하지 않습니다.");
-					
+
 				}
 			}
 
@@ -98,7 +98,7 @@ public class loverbook {
 						System.out.println("3. 도서 삭제");
 						System.out.println("항목을 선택하시오 : ");
 						l_menu = s.nextInt();
-						
+
 						if(l_menu == 1){
 							System.out.println("도서 제목 : ");
 							book[0] = s.next();
@@ -110,26 +110,38 @@ public class loverbook {
 							book[4] = "O";
 							book[5] = "0000000";
 							booknum++;
-							
+
 							System.out.println("도서 등록이 완료되었습니다.");
 							for(int i = 0; i<6;i++){
 								System.out.print(book[i]+" | ");
+
 							}
 							System.out.println();
 						}
-						
+
 						else if(l_menu == 2){
 							System.out.println("수정할 도서의 번호를 입력하세요: ");
-						}
-					}
-				}
 
-				else{
-					System.out.println("비밀번호가 틀렸습니다.다시 입력해 주세요.");
+
+						}
+						System.out.println();
+					}
+					else if(l_menu == 2){
+						System.out.println("수정할 도서의 번호를 입력하세요: ");
+					}
 				}
 			}
 
+			else{
+				System.out.println("비밀번호가 틀렸습니다.다시 입력해 주세요.");
+			}
 		}
 
 	}
+
+
+}
+
+
+}
 }
