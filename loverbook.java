@@ -105,6 +105,9 @@ public class loverbook {
 								System.out.println();
 							}
 						}
+						else if(l_menu == 2){
+							System.out.println("수정할 도서의 번호를 입력하세요 : ");
+						}
 					}
 				}
 
